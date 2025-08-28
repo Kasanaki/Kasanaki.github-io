@@ -1,0 +1,39 @@
+@import url("navbar.css");
+@import url("responsive476.css");
+@import url("page.css");
+@import url("home.css");
+
+:root {
+  --primary-a: #f9f7f7;
+  --secondary-a: #42538d;
+  --accent-a: #3f72af;
+  --highlight-a: #112d4e;
+
+  --additional1: #3c4f5e;
+  --additional2: #364fac;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Onest", sans-serif;
+  background-color: var(--primary-a);
+  font-size: 15px;
+}
+
+.root {
+  width: fit-content;
+  height: fit-content;
+}
+
+.transition {
+  transition: all 0.5s ease;
+}

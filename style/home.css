@@ -1,0 +1,123 @@
+.home {
+  z-index: 5;
+}
+
+.textService {
+  max-width: 800px;
+  height: 100%;
+  color: var(--secondary-a);
+  text-align: justify;
+  text-align-last: center;
+  margin-top: 70px;
+}
+
+.textService h1 {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: var(--highlight-a);
+}
+
+.textService p {
+  background: rgba(249, 247, 247, 0.866); /* semi transparan */
+  backdrop-filter: blur(5px); /* efek blur belakang */
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  margin-top: 10px;
+}
+
+.cardService {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .cardService {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cardService__contain {
+  display: flex;
+  position: relative;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+  border: 7px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(45deg, var(--additional1), var(--additional2))
+      border-box,
+    /* gradient */ var(--secondary-a) padding-box; /* isi box */
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.cardService__contain:hover {
+  transform: scale(1.05);
+}
+
+.cardService__contain:hover img {
+  opacity: 0.85;
+}
+
+.cardService__contain img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.cardService__contain__text {
+  position: absolute;
+  display: flex;
+  height: -webkit-fill-available;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardService__contain__text h2 {
+  color: var(--primary-a);
+  text-shadow: #112d4e 2px 2px 10px;
+  font-size: 18px;
+}
+
+.cardService__contain__text p {
+  font-size: 14px;
+  text-align: justify;
+  text-align-last: center;
+  padding: 15px;
+  margin: 0px 10px 0px 10px;
+  opacity: 0;
+}
+
+.cardService__contain:hover p {
+  opacity: 1;
+  background: rgba(39, 55, 77, 0.5); /* semi transparan */
+  backdrop-filter: blur(5px); /* efek blur belakang */
+  border-radius: 8px;
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.cardService__contain__text__btn {
+  background-color: var(--primary-a);
+  color: var(--additional1);
+  width: 200px;
+  height: 35px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0px;
+  font-weight: 600;
+}
+
+.cardService__contain:hover .cardService__contain__text__btn {
+  background-color: var(--highlight-a);
+  color: var(--primary-a);
+}

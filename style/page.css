@@ -1,0 +1,41 @@
+.page {
+  display: flex;
+  width: 300vw;
+  min-height: 100dvh;
+  transform: translateX(-100vw);
+}
+
+.page__contain {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.pageMiddleContent {
+  position: absolute;
+  width: 100vw;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary-a);
+  padding: 20px;
+  background-color: var(--primary-a);
+}
+
+.info,
+.service,
+.testimony,
+.faq {
+  display: none;
+  transform: translateX(100vw);
+}
+
+.info {
+  transform: translateX(0);
+  z-index: 6;
+  display: block;
+}
