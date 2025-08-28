@@ -33,9 +33,3 @@
   display: none;
   transform: translateX(100vw);
 }
-
-.info {
-  transform: translateX(0);
-  z-index: 6;
-  display: block;
-}
